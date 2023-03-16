@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" >
+    <title>buc pc</title>
+</head>
+
+<style>
+
+   marquee{
+    color: gold;
+    background-color: dimgrey;
+    width: 100%;
+    height:100%;
+  }
+
+  body{
+    background-color: greenyellow ;
+  }
+
+  /**PC LOGO**/
+.image1{
+  width: 85px;
+  height: 80px; 
+  margin: 0 0 15px; 
+  float: left;
+}
+
+
+/**BUC LOGO**/
+.image2{
+  display: flex;
+  width: 85px;
+  height: 85px;  
+  float: right;
+  margin: 0 0 15px 0;
+}
+
+  /**SCHOOL RECOGNITION**/
+ p1 {
+  
+ }
+
+nav{
+   justify-content: space-around;
+  background-color: goldenrod;
+  color: green;
+  padding: .3px 1px;
+}
+
+
+
+
+
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid hotpink;
+  background-color: white;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 5px;
+  transition: 0.1s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 3px 5px;
+  border: 1px solid blue;
+  border-top: none;
+}
+
+footer{
+  background-color: lawngreen;
+}
+</style>
+
+<marquee behavior="scroll" direction="left"> 
+                <h1 class="head1"><i>The BUC PC wish to welcome you to their site for personal sustainability</i></h1> 
+  </marquee>
+
+
+
+  <body>
+
+     <nav id="header-nav" class="navbar navbar-default">      
+<!-- PC LOGO-->
+   <img class="image1" src="pcb.jpg">
+<!-- TITLE RECOGNITION-->
+ <p1> <b style="font-size: 150%;">Bomet University College</b><br>
+ <i>(The Constituent of Moi University)</i> <br>
+  <b>Peer Counseling Group</b> <br> 
+  <i>Stronger mind, Stronger body, Stronger you <b>!!</b></i>
+ </p1>
+<!-- BUC LOGO -->
+<img class="image2" src="bucl.png">
+  
+
+  <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'BE RECOGNIZED')">BE <br>RECOGNIZED
+</button>
+  <button class="tablinks" onclick="openCity(event, ' ABOUT US')"><br>ABOUT US
+</button>
+<button class="tablinks" onclick="openCity(event, 'SENIOR COUNSELORS')">SENIOR <br>COUNSELORS</button>
+  <button class="tablinks" onclick="openCity(event, 'PEER COUNSELORS')">PEER <br>COUNSELORS</button>
+</div>
+ 
+</nav>
+</div>
+<!-- Tab content -->
+<div id="BE RECOGNIZED" class="tabcontent">
+  <h3>BE RECOGNIZED</h3>
+  <p>You can now air out any hinderance you face through a confidential manner</p>
+</div>
+
+<div id=" ABOUT US" class="tabcontent">
+  <h3>MORE INFO</h3>
+ Introduction.<br>
+  Motto<br>    
+    Aims and Objectives<br>
+    Activities<br>
+    Wishes
+
+</div>
+
+<div id="PEER COUNSELORS" class="tabcontent">
+  <h3>PEER COUNSELORS</h3>
+  <p>Paris is the capital of France.</p>
+  <img src="dem.png" alt="dem" width="40" height="40">
+</div>
+
+<div id="SENIOR COUNSELORS" class="tabcontent">
+  <h3>SENIOR COUNSELORS</h3>
+  <p>Highly trained counselors are always available to help in the issues that do arise</p>
+</div>
+
+
+<video width="130" height="130" controls>
+  <source src="vid.mp4" type="video/mp4">
+  <source src="vid.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+<hr>
+<footer class="panel-footer">
+<div class="container">
+  <div class="row" >
+  Get Contact to him via: <a href="https://wa.link/dledvt">WhatsApp</a> 
+<a href="mailto: mahkaoko14@gmail.com">email</a>
+ Or Quickly <a href="tel:+254746300782">Call...</a>
+</div>
+</div>
+</footer>
+
+
+<script>
+  
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+</body>
+</html>
